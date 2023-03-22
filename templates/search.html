@@ -1,0 +1,26 @@
+<!-- SEARCH.HTML -->
+{% extends 'base.html' %}
+{% block content %}
+ <div>
+    <h2 align="center"> {{ word | title }} </h2>
+    <br>
+    <p>
+        <b>Meaning: </b>{{meaning}}
+    </p>
+    <br>
+    <p>
+    <b>Synonyms: </b>
+
+   {{ synonyms }}  
+</p>
+<br>
+<p>
+    <b>Antonyms: </b>
+     {{ antonyms }}
+        
+</p>
+
+<p><a href="{% url 'home' %}>Home</a></p>
+   
+</div>
+{% endblock %}
